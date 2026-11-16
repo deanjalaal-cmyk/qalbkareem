@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qalb Kareem Foundation | Clean water, community hubs and Quranic education in rural Uganda</title>
+<meta name="description" content="Qalb Kareem Foundation builds solar boreholes, community mosques and safe places of learning across rural Uganda. Partner with us.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --deep:#0C3A45; --water:#1B8CA3; --mist:#E6F2F4; --sun:#EDB445; --ink:#12272D; --paper:#FBFDFD; --line:#C9DDE1;
+  --serif:'Fraunces',Georgia,serif; --sans:'Hanken Grotesk',system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--mist:#0F2A31;--ink:#E4F0F2;--paper:#0A1E24;--line:#1F4048;--deep:#061418}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:400 1.0625rem/1.65 var(--sans);color:var(--ink);background:var(--paper)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--serif);line-height:1.1;margin:0}
+h2{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:700;margin-bottom:1rem}
+h3{font-size:1.4rem;font-weight:700;margin-bottom:.5rem}
+p{margin:0 0 1rem;max-width:62ch}
+
+header{position:absolute;inset:0 0 auto 0;z-index:5;padding-top:1rem}
+nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;color:#fff}
+.brand{font-family:var(--serif);font-weight:700;font-size:1.2rem;text-decoration:none}
+nav ul{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0;font-weight:500;font-size:.95rem}
+nav ul a{text-decoration:none;opacity:.9}
+nav ul a:hover{opacity:1;text-decoration:underline}
+@media(max-width:640px){nav ul li:not(:last-child){display:none}}
+
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:999px;font-weight:600;text-decoration:none;background:var(--sun);color:#12272D}
+.btn:hover{filter:brightness(1.06)}
+.btn.ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6)}
+
+/* Hero: the waterline rises once on load */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;background:var(--deep);color:#fff;overflow:hidden;padding:7rem 0 4rem}
+.water{position:absolute;inset:auto 0 0 0;height:100%;background:linear-gradient(180deg,#1B8CA3 0%,#0F5A6B 100%);transform:translateY(78%);animation:rise 2.6s cubic-bezier(.2,.7,.2,1) .2s forwards}
+.water::before{content:"";position:absolute;left:0;right:0;top:-34px;height:36px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 40' preserveAspectRatio='none'%3E%3Cpath d='M0 40V22C100 4 200 4 300 22S500 40 600 22 800 4 900 22s200 18 300 0V40z' fill='%231B8CA3'/%3E%3C/svg%3E") center/100% 100% repeat-x}
+@keyframes rise{to{transform:translateY(38%)}}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.6rem,8vw,5.6rem);font-weight:700;max-width:14ch;margin-bottom:1.25rem}
+.hero p{font-size:1.2rem;max-width:52ch;color:#E6F2F4}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+
+section{padding:5rem 0}
+.mist{background:var(--mist)}
+.lead{font-size:1.2rem}
+
+.pillars{display:grid;gap:1.25rem;margin-top:2.5rem;grid-template-columns:1.4fr 1fr 1fr}
+.pillar{padding:1.75rem;border-radius:18px;border:1px solid var(--line);background:var(--paper)}
+.pillar.main{background:var(--deep);color:#fff;border-color:var(--deep)}
+.pillar.main p{color:#D5E8EC}
+.pillar small{display:block;font-weight:600;color:var(--water);margin-bottom:.75rem}
+.pillar.main small{color:var(--sun)}
+.pillar svg{width:44px;height:44px;margin-bottom:1rem}
+@media(max-width:820px){.pillars{grid-template-columns:1fr}}
+
+.split{display:grid;gap:3rem;grid-template-columns:1fr 1fr;align-items:start}
+@media(max-width:820px){.split{grid-template-columns:1fr;gap:2rem}}
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;border-left:3px solid var(--water)}
+.steps li{counter-increment:s;padding:0 0 1.5rem 1.5rem;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:-17px;top:0;width:31px;height:31px;border-radius:50%;background:var(--water);color:#fff;font-weight:600;display:grid;place-items:center;font-size:.9rem}
+.steps b{display:block;font-family:var(--serif);font-size:1.15rem}
+
+.partners{display:grid;gap:1rem;grid-template-columns:repeat(3,1fr);margin-top:2rem}
+.partners div{padding:1.25rem;border-left:4px solid var(--sun);background:var(--paper)}
+@media(max-width:820px){.partners{grid-template-columns:1fr}}
+
+.contact{background:var(--deep);color:#fff;text-align:left}
+.contact p{color:#D5E8EC}
+.contact a.mail{font-family:var(--serif);font-size:clamp(1.3rem,4.5vw,2.2rem);word-break:break-all;color:var(--sun)}
+footer{padding:1.75rem 0;font-size:.9rem;background:var(--deep);color:#9DBFC6;border-top:1px solid #1F4048}
+
+@media(prefers-reduced-motion:reduce){.water{animation:none;transform:translateY(38%)}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav aria-label="Main">
+      <a class="brand" href="#top">Qalb Kareem Foundation</a>
+      <ul>
+        <li><a href="#work">Our work</a></li>
+        <li><a href="#governance">How we last</a></li>
+        <li><a href="#partner">Partner</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="water" aria-hidden="true"></div>
+  <div class="wrap">
+    <h1>Free, clean water for rural Uganda.</h1>
+    <p>Qalb Kareem Foundation builds solar-powered boreholes, community mosques and safe places of learning, and hands each one to the community to run for generations.</p>
+    <div class="cta">
+      <a class="btn" href="#partner">Partner with us</a>
+      <a class="btn ghost" href="#work">See our work</a>
+    </div>
+  </div>
+</div>
+
+<section id="work">
+  <div class="wrap">
+    <h2>Three pillars, one community</h2>
+    <p class="lead">Water comes first because nothing else works without it. Around it we build the places where people gather, and the classrooms where children learn.</p>
+    <div class="pillars">
+      <article class="pillar main">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#EDB445" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 5C17 15 12 21 12 28a12 12 0 0 0 24 0c0-7-5-13-12-23z"/><path d="M18 30a6 6 0 0 0 6 6"/></svg>
+        <small>Clean water access (WASH)</small>
+        <h3>Solar boreholes, free to everyone</h3>
+        <p>We drill deep wells and power them with solar, so families no longer walk for unsafe water. Every borehole is a free public water point with no fee and no barrier, cutting the waterborne illness that hits children hardest.</p>
+      </article>
+      <article class="pillar">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#1B8CA3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 42V24a16 16 0 0 1 32 0v18"/><path d="M4 42h40M24 4v4M19 42V32a5 5 0 0 1 10 0v10"/></svg>
+        <small>Community infrastructure</small>
+        <h3>Hubs and mosques that hold people together</h3>
+        <p>We build and maintain regional hubs and community mosques that serve as centres for relief, unity and resilience.</p>
+      </article>
+      <article class="pillar">
+        <svg viewBox="0 0 48 48" fill="none" stroke="#1B8CA3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24 12c-5-4-12-4-18-2v28c6-2 13-2 18 2 5-4 12-4 18-2V10c-6-2-13-2-18 2z"/><path d="M24 12v28"/></svg>
+        <small>Faith and education</small>
+        <h3>Safe classrooms, Quranic learning</h3>
+        <p>We secure structured learning spaces and materials so local youth grow up with strong values and quality Quranic education.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="governance" class="mist">
+  <div class="wrap split">
+    <div>
+      <h2>Built to outlast us</h2>
+      <p class="lead">A well that breaks after two years helps no one. So every project is owned by the people it serves.</p>
+      <p>We work to strict international standards of transparency, and each water point is managed by a Water Users Committee drawn from the community itself. That keeps projects physically and operationally sustainable for generations.</p>
+    </div>
+    <ol class="steps">
+      <li><b>Listen</b>Villages tell us where need is greatest.</li>
+      <li><b>Build</b>We engineer the borehole, solar system or building to a high standard.</li>
+      <li><b>Hand over</b>A Water Users Committee takes charge of care and upkeep.</li>
+      <li><b>Stay accountable</b>We report openly on what was built and how it is running.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="partner">
+  <div class="wrap">
+    <h2>Partner with us</h2>
+    <p class="lead">We welcome strategic partnerships, corporate CSR collaborations and institutional grants that help us reach more communities and build a lasting legacy on the ground.</p>
+    <div class="partners">
+      <div><h3>Corporate CSR</h3><p>Fund a borehole or hub and see exactly where your support lands.</p></div>
+      <div><h3>Institutional grants</h3><p>Scale proven, community-led water and education programmes.</p></div>
+      <div><h3>Strategic partners</h3><p>Share expertise, technology or local networks with us.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Start a conversation</h2>
+    <p>Tell us about your organization and what you would like to support. We reply personally.</p>
+    <a class="mail" href="mailto:sserwaddajalalu@gmail.com?subject=Partnership%20enquiry%20-%20Qalb%20Kareem%20Foundation">sserwaddajalalu@gmail.com</a>
+    <p style="margin-top:1rem">Founder and Executive Director, Qalb Kareem Foundation</p>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Qalb Kareem Foundation. Serving rural communities across Uganda.</div></footer>
+</body>
+</html>
